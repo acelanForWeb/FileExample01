@@ -12,9 +12,9 @@ public class Test {
 		 */
 		
 		
-		String folderPath = "D:/testFolder";//建立testFolder資料夾檔案路徑
-		String filePath1 = "D:/testFolder/test1.txt";//建立test1.txt檔案路徑
-		String filePath2 = "D:/testFolder/test2.txt";//建立test2.txt檔案路徑
+		String folderPath = "testFolder";//建立testFolder資料夾檔案路徑
+		String filePath1 = "testFolder/test1.txt";//建立test1.txt檔案路徑
+		String filePath2 = "testFolder/test2.txt";//建立test2.txt檔案路徑
 		
 		File folder = new File(folderPath);
 		File file1 = new File(filePath1);
@@ -38,6 +38,7 @@ public class Test {
 			System.out.println("建立檔案test1.txt成功?"+createFileSuccess1);
 			System.out.println("建立檔案test2.txt成功?"+createFileSuccess2);
 			
+			Thread.sleep(10000);//讓程式暫停10秒
 			
 			/*
 			 * 刪除test2.txt檔案
